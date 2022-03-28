@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/APIGateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Service Discovery/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/carrinho/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/nelsonrubens/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/porteiro/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/produto/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/usuario/src/main/java" charset="UTF-8" />
   </component>
