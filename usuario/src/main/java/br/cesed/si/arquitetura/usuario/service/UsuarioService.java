@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UsuarioService {
@@ -26,7 +25,8 @@ public class UsuarioService {
     }
 
     public UsuarioEntity findByCPF(Long cpf){
-        return (usuarioRepositoty.findByCpf(cpf)).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Usuario nao encontrado."));
+        return (usuarioRepositoty.findByCpf(cpf)).orElseThrow(() ->
+                new ResponseStatusException(HttpStatus.NOT_FOUND, "Usuario nao encontrado."));
     }
 
     public void deleteByCpf(Long cpf){
@@ -38,8 +38,6 @@ public class UsuarioService {
         this.findByCPF(cpf);
         this.save(usuario);
     }
-
-
 
 
 }
