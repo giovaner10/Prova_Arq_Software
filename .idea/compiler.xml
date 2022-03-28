@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="nelsonrubens" />
+        <module name="usuario" />
+        <module name="porteiro" />
+        <module name="carrinho" />
+        <module name="produto" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="carrinho" target="11" />
+      <module name="nelsonrubens" target="11" />
+      <module name="porteiro" target="11" />
+      <module name="produto" target="11" />
+      <module name="usuario" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="carrinho" options="-parameters" />
+      <module name="nelsonrubens" options="-parameters" />
+      <module name="porteiro" options="-parameters" />
+      <module name="produto" options="-parameters" />
+      <module name="usuario" options="-parameters" />
+    </option>
+  </component>
+</project>

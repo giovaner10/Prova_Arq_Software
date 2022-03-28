@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: api-gateway (porteiro)
+
+server:
+  port: 8888
+
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: ${vcap.services.eureka-service.credentials.uri:http://192.168.0.102:8761}/eureka/
