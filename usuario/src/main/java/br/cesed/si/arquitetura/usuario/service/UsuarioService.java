@@ -25,12 +25,18 @@ public class UsuarioService {
         return usuarioRepositoty.findAll();
     }
 
-    public Optional<UsuarioEntity> findByCPF(Long cpf){
-        return Optional.of(usuarioRepositoty.findByCpf(cpf)).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Usuario nao encontrado."));
+    public UsuarioEntity findByCPF(Long cpf){
+        return (usuarioRepositoty.findByCpf(cpf)).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Usuario nao encontrado."));
     }
 
     public void deleteByCpf(Long cpf){
+        this.findByCPF(cpf);
          usuarioRepositoty.deleteById(cpf);
+    }
+
+    public void update(Long cpf,  UsuarioEntity usuario){
+        this.findByCPF(cpf);
+        this.save(usuario);
     }
 
 

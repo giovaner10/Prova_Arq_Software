@@ -32,15 +32,22 @@ public class UsuarioController {
 
     @GetMapping("/{cpf}")
     @ResponseStatus(HttpStatus.OK)
-    public Optional<UsuarioEntity> findByCPF(@PathVariable("cpf") Long cpf){
+    public UsuarioEntity findByCPF(@PathVariable("cpf") Long cpf){
         return service.findByCPF(cpf);
     }
 
 
     @DeleteMapping("/{cpf}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void removerCliente(@PathVariable("cpf") Long cpf){
+    public void deleteByCpf(@PathVariable("cpf") Long cpf){
        service.deleteByCpf(cpf);
+    }
+
+
+    @PutMapping("/{cpf}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void atualizarCliente(@PathVariable("cpf") Long cpf, @RequestBody UsuarioEntity usuarioEntity){
+        service.update(cpf, usuarioEntity);
     }
 
 
