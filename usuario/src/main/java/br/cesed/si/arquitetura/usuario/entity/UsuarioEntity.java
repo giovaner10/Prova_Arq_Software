@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,7 +19,7 @@ import java.io.Serializable;
 public class UsuarioEntity implements Serializable {
     @Id
     @Column(name = "CPF", nullable = false)
-    private Long CPF;
+    private Long cpf;
 
     @Column(name = "Nome", nullable = false)
     private String nome;
@@ -37,10 +36,10 @@ public class UsuarioEntity implements Serializable {
     }
 
     public Long getId() {
-        return CPF;
+        return cpf;
     }
 
     public void setId(Long id) {
-        this.CPF = id;
+        this.cpf = id;
     }
 }

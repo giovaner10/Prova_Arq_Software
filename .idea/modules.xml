@@ -4,8 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Prova arq.iml" filepath="$PROJECT_DIR$/.idea/Prova arq.iml" />
       <module fileurl="file://$PROJECT_DIR$/carrinho/carrinho.iml" filepath="$PROJECT_DIR$/carrinho/carrinho.iml" />
-      <module fileurl="file://$PROJECT_DIR$/nelsonrubens/nelsonrubens.iml" filepath="$PROJECT_DIR$/nelsonrubens/nelsonrubens.iml" />
-      <module fileurl="file://$PROJECT_DIR$/porteiro/porteiro.iml" filepath="$PROJECT_DIR$/porteiro/porteiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Service Discovery/nelsonrubens.iml" filepath="$PROJECT_DIR$/Service Discovery/nelsonrubens.iml" />
       <module fileurl="file://$PROJECT_DIR$/produto/produto.iml" filepath="$PROJECT_DIR$/produto/produto.iml" />
       <module fileurl="file://$PROJECT_DIR$/usuario/usuario.iml" filepath="$PROJECT_DIR$/usuario/usuario.iml" />
     </modules>

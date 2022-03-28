@@ -2,42 +2,48 @@ package br.cesed.si.arquitetura.usuario.controller;
 
 import br.cesed.si.arquitetura.usuario.entity.UsuarioEntity;
 import br.cesed.si.arquitetura.usuario.service.UsuarioService;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
-@AllArgsConstructor
 @RequestMapping("/usuario")
 public class UsuarioController {
 
+    @Autowired
     private UsuarioService service;
 
     @PostMapping()
-    public ResponseEntity<UsuarioEntity> save(UsuarioEntity usuario){
-        return new ResponseEntity<>(service.save(usuario), HttpStatus.CREATED);
+    @ResponseStatus(HttpStatus.CREATED)
+    public UsuarioEntity save(@RequestBody UsuarioEntity usuario){
+        return service.save(usuario);
     }
 
 
     @GetMapping()
-    public ResponseEntity<List<UsuarioEntity>> findAll(){
-        return new ResponseEntity<>(service.findAll(), HttpStatus.OK);
+    @ResponseStatus(HttpStatus.OK)
+    public List<UsuarioEntity> findAll(){
+        return service.findAll();
     }
 
 
     @GetMapping("/{cpf}")
-    public ResponseEntity<UsuarioEntity> findByCPF(@PathVariable("cpf") Long cpf){
-        return new ResponseEntity<>(service.findByCPF(cpf), HttpStatus.OK);
+    @ResponseStatus(HttpStatus.OK)
+    public Optional<UsuarioEntity> findByCPF(@PathVariable("cpf") Long cpf){
+        return service.findByCPF(cpf);
     }
 
 
     @DeleteMapping("/{cpf}")
-    public UsuarioEntity deleteByCPF(@PathVariable("cpf") Long cpf){
-        return service.deleteByCPF(cpf);
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void removerCliente(@PathVariable("cpf") Long cpf){
+       service.deleteByCpf(cpf);
     }
+
+
 
 
 

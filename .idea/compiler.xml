@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="nelsonrubens" />
         <module name="usuario" />
-        <module name="porteiro" />
         <module name="carrinho" />
         <module name="produto" />
       </profile>
