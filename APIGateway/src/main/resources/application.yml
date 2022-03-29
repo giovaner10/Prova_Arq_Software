@@ -1,11 +1,28 @@
-spring:
-  application:
-    name: api-gateway (porteiro)
+
 
 server:
-  port: 8888
+  port: 9999
 
-  eureka:
-    client:
-      serviceUrl:
-        defaultZone: ${vcap.services.eureka-service.credentials.uri:http://192.168.0.102:8761}/eureka/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: API-GATEWAY-PORTEIRO
+  cloud:
+    gateway:
+      routes:
+        - id: carModule
+          uri: lb://carrinho
+          predicates:
+            - Path=/car/**
+        - id: prodModule
+            uri: lb://produto
+            predicates:
+              - Path=/prod/**
+        - id: userModule
+            uri: lb://usuario
+            predicates:
+              - Path=/user/**
