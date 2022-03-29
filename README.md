@@ -43,13 +43,13 @@ Esse projeto foi elaborado como parte da primeira avaliação da cadeira de Arqu
 ## :framed_picture: Imagens do Site
 
 - printscreen do Eureka e do funcionamento dos 3 Microservices: </br>
- ![foto1](https://github.com/giovaner10/templete_angular/blob/main/prints%20-arq%20sof/4.png)   
+ ![foto1](https://github.com/giovaner10/templete_angular/blob/main/prints%20-arq%20sof/4.png) </br>  
  
 - printscreen do Microservice Carrinho: </br>
- ![foto1](https://github.com/giovaner10/templete_angular/blob/main/prints%20-arq%20sof/2.png) 
+ ![foto1](https://github.com/giovaner10/templete_angular/blob/main/prints%20-arq%20sof/2.png) </br>
  
  - printscreen do Microservice Usuario: </br>
- ![foto1](https://github.com/giovaner10/templete_angular/blob/main/prints%20-arq%20sof/1.png)
+ ![foto1](https://github.com/giovaner10/templete_angular/blob/main/prints%20-arq%20sof/1.png) </br>
  
  - printscreen do Microservice Produto: </br>
- ![foto1](https://github.com/giovaner10/templete_angular/blob/main/prints%20-arq%20sof/3.png)  
+ ![foto1](https://github.com/giovaner10/templete_angular/blob/main/prints%20-arq%20sof/3.png) </br>
