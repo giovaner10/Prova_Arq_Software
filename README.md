@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 <a id="ancora2"></a>
 ## 💻 Projeto
-Esse projeto foi elaborado como parte da primeira avaliação da cadeira de Arquitetura de Software, na [UNIFACISA-Sistemas da Informação](https://www.unifacisa.edu.br/graduacao/sistemas-de-informacao). A proposta foi  consiste nas seguintes atividades:
+Esse projeto foi elaborado como parte da primeira avaliação da cadeira de Arquitetura de Software, na [UNIFACISA-Sistemas da Informação](https://www.unifacisa.edu.br/graduacao/sistemas-de-informacao). A proposta de avaliação consiste nas seguintes atividades:
 - Utilizando-se Spring Cloud, implementar uma arquitetura baseada em microservice
 - Deve ter um API Gateway, Service Discovery (Eureka) e ao menos 3 Microservices
 - Cada um dos 3 microservices deve ter uma REST API
