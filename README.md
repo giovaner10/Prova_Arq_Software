@@ -32,7 +32,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 <a id="ancora2"></a>
 ## 💻 Projeto
-Esse projeto foi elaborado durante o bootcamp de FullStack Java da [SoulCode](https://soulcodeacademy.org/index.html). A proposta foi construir um Relogio Digital com js, html 5 e css 3.
+Esse projeto foi elaborado como parte da primeira avaliação da cadeira de Arquitetura de Software, na [UNIFACISA-Sistemas da Informação](https://www.unifacisa.edu.br/graduacao/sistemas-de-informacao). A proposta foi  consiste nas seguintes atividades:
+- Utilizando-se Spring Cloud, implementar uma arquitetura baseada em microservice
+- Deve ter um API Gateway, Service Discovery (Eureka) e ao menos 3 Microservices
+- Cada um dos 3 microservices deve ter uma REST API
+- Para a REST API, deve criar a documentação com Swagger
+- Deve ser enviado printscreen do Eureka e do funcionamento dos 3 Microservices
 
 <a id="ancora3"></a>
 ## :framed_picture: Imagens do Site
