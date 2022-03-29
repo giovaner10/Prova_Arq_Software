@@ -1,5 +1,3 @@
-
-
 server:
   port: 9999
 
@@ -18,11 +16,11 @@ spring:
           uri: lb://carrinho
           predicates:
             - Path=/car/**
-        - id: prodModule
-            uri: lb://produto
-            predicates:
-              - Path=/prod/**
         - id: userModule
             uri: lb://usuario
             predicates:
               - Path=/user/**
+        - id: prodModule
+            uri: lb://produto
+            predicates:
+              - Path=/prod/**
