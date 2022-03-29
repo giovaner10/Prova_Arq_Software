@@ -17,8 +17,8 @@ public class ProdutoController {
 
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
-    public ProdutoEntity save(@RequestBody ProdutoEntity carrinho){
-        return service.save(carrinho);
+    public ProdutoEntity save(@RequestBody ProdutoEntity produto){
+        return service.save(produto);
     }
 
 
