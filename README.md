@@ -42,6 +42,6 @@ Esse projeto foi elaborado como parte da primeira avaliação da cadeira de Arqu
 <a id="ancora3"></a>
 ## :framed_picture: Imagens do Site
 
-
- ![foto1](https://github.com/giovaner10/Relogio_Digital_JavaScript/blob/main/img/Captura%20de%20tela%202022-03-04%20234820.png)   
+-printscreen do Eureka e do funcionamento dos 3 Microservices:
+ ![foto1](https://github.com/giovaner10/templete_angular/blob/main/prints%20-arq%20sof/4.png)   
  ![foto](https://github.com/giovaner10/Relogio_Digital_JavaScript/blob/main/img/Captura%20de%20tela%202022-03-04%20234836.png) 
