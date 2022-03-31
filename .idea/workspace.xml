@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e650c96-f88d-48aa-a81d-8bdb40592294" name="Changes" comment="api gateway, detalhes finais" />
+    <list default="true" id="1e650c96-f88d-48aa-a81d-8bdb40592294" name="Changes" comment="CarrinhoControler.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,6 +175,7 @@
     <MESSAGE value="Finalizando controller ProdutoController" />
     <MESSAGE value="." />
     <MESSAGE value="api gateway, detalhes finais" />
-    <option name="LAST_COMMIT_MESSAGE" value="api gateway, detalhes finais" />
+    <MESSAGE value="CarrinhoControler.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="CarrinhoControler.java" />
   </component>
 </project>

@@ -39,7 +39,6 @@ public class UsuarioService {
         this.save(usuario);
     }
 
-
 }
 
 
