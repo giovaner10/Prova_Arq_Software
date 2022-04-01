@@ -7,20 +7,21 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 spring:
-  application:
-    name: API-GATEWAY-PORTEIRO
   cloud:
     gateway:
       routes:
+
         - id: carModule
-          uri: lb://carrinho
+          uri: http://localhost:8891/carrinho
           predicates:
-            - Path=/car/**
-        - id: userModule
-            uri: lb://usuario
-            predicates:
-              - Path=/user/**
+            - Path=/**
         - id: prodModule
-            uri: lb://produto
+            uri: http://localhost:8889/produto
             predicates:
-              - Path=/prod/**
+              - Path=/**
+        - id: userModule
+            uri: http://localhost:8890/usuario
+            predicates:
+              - Path=/**
+  application:
+    name: API-GATEWAY-PORTEIRO
