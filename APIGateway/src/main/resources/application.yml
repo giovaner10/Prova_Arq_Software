@@ -16,12 +16,12 @@ spring:
           predicates:
             - Path=/**
         - id: prodModule
-            uri: http://localhost:8889/produto
-            predicates:
+          uri: http://localhost:8889/produto
+          predicates:
               - Path=/**
         - id: userModule
-            uri: http://localhost:8890/usuario
-            predicates:
-              - Path=/**
+          uri: http://localhost:8890/usuario
+          predicates:
+             - Path=/**
   application:
     name: API-GATEWAY-PORTEIRO
